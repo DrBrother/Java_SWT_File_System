@@ -132,7 +132,7 @@ public class Generator {
 		return new Person(getRandomData(surnames), getRandomData(names), getRandomData(middleNames));
 	}
 
-	public static Teacher generateSportsman() {
+	public static Teacher generateteacher() {
 		return new Teacher(generatePerson(), getRandomData(faculty), getRandomData(departmentsName),
 				getRandomData(stage),getRandomData(academicRank) ,getRandomData(academicDegree));
 	}
@@ -141,7 +141,7 @@ public class Generator {
 		List<Teacher> teachers = new ArrayList<>();
 		while (amount != 0) {
 			amount--;
-			teachers.add(generateSportsman());
+			teachers.add(generateteacher());
 		}
 		return teachers;
 	}
